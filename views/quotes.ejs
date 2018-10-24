@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Here are the Quotes</p>
+    <a href='/'>Go Back</a>
+    <% for(let i = 0; i < quotes.length; i++) { %>
+        <p>"<%= quotes[i].quote %>"</p>
+        <p>- <%= quotes[i].name %> at <%= quotes[i].createdAt %></p>
+        <hr>
+    <% } %>
+</body>
+</html>
